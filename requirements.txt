@@ -2,3 +2,4 @@ streamlit==1.5.1
 pyodbc==4.0.32
 pandas==1.4.1
 pillow==9.0.1
+python==3.9.7

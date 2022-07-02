@@ -9,7 +9,7 @@ import pandas as pd
 
 from PIL import Image
 
-conx=pyodbc.connect("driver={ODBC Driver 17 for SQL Server};server=DESKTOP-TGP0OCM;database=demo;trusted_connection=YES")
+conx=pyodbc.connect("driver={ODBC Driver 17 for SQL Server};server=DESKTOP-TNDG4N4\SQLEXPRESS;database=energy;trusted_connection=YES")
 cursor=conx.cursor()
 query="select *from dbo.medak"
 data=pd.read_sql(query,conx)
@@ -67,7 +67,7 @@ def gh(a):
     if df=="Crop Prediction":
         
         st.title("CROP PREDICTION")
-        image=Image.open("C:\\Users\\madha\\OneDrive\\Desktop\\streamlit\\agriculture\\download.png")
+        image=Image.open("C:\Users\Admin\Desktop\celery-field-in-the-salinas-valley-california.jpg")
         st.image(image,width=200)
         
         d=st.selectbox("Month",["January", "February", "March", "April", "May", "June", "July","August", "September", "October", "November","December"])
@@ -175,7 +175,7 @@ if df=="About us":
              based on past trends. Hence it allows the farmers to decide the best crop to grow to 
              suffer minimum losses.""")
 
-    image=Image.open("C:\\Users\\madha\\OneDrive\\Desktop\\streamlit\\agriculture\\agriculture-logo-design-free-downlaod-scaled.jpg")
+    image=Image.open("C:\Users\Admin\Desktop\pngtree-green-agriculture-logo-design-template-vector-illustration-png-image_3732980.jpg")
     st.image(image,width=200)
     
     st.subheader("Conclusion and Future Scope")
@@ -191,6 +191,6 @@ if df=="About us":
     st.write("""This project if compiled with a bigger data set can be a boon for the government 
              as it may help them plan properly and in turn help our objective.""")
     
-    image=Image.open("C:\\Users\\madha\\OneDrive\\Desktop\\streamlit\\agriculture\\data_science.jpg")
+    image=Image.open("C:\Users\Admin\Desktop\Agriculture-PNG-Transparent.png")
     st.image(image,width=200)
     
